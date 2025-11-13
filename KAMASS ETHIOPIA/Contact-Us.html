@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!-- Specifies the character encoding for the webpage. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--ensures the page width matches the device's screen width and  sets the default zoom level to 100%-->
+    <title>KAMASS ETHIOPIA - Home</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script><!--Loads Tailwind CSS-->
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#0066CC',secondary:'#E6F3FF'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"><!-- Loads custom fonts from Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="icon" type="image/x-icon" href="KE logo.png">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('BG IMAGE1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .map-container {
+            background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png');
+            background-size: cover;
+            background-position: center;
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #0369a1;
+            box-shadow: 0 0 0 1px #0369a1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-primary text-white">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="#" class="text-2xl font-['Pacifico'] text-white"><img src="KE logo.png" width="20%"></a>
+            
+            <div class="relative w-1/3">
+                <input type="text" placeholder="Search for products..." class="w-full py-2 px-4 pr-10 rounded text-gray-700 border-none text-sm">
+                <button class="absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-500">
+                    <i class="ri-search-line"></i>
+                </button>
+            </div>
+            
+            <div class="flex items-center gap-6">
+                <a href="#" class="relative w-8 h-8 flex items-center justify-center">
+                    <i class="ri-heart-line text-xl"></i>
+                    <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+                </a>
+                <a href="#" class="relative w-8 h-8 flex items-center justify-center">
+                    <i class="ri-shopping-cart-line text-xl"></i>
+                    <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">2</span>
+                </a>
+                <a href="#" class="w-8 h-8 flex items-center justify-center">
+                    <i class="ri-user-line text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <ul class="flex justify-center space-x-10 py-4">
+                <li><a href="Home.html" class="text-gray-600 hover:text-primary">Home</a></li>
+                <li><a href="Products.html" class="text-gray-600 hover:text-primary">Products</a></li>
+                <li><a href="Deals.html" class="text-gray-600 hover:text-primary">Deals</a></li>
+                <li><a href="About Us.html" class="text-gray-600 hover:text-primary">About Us</a></li>
+                <li><a href="Contact-Us.html" class="text-primary font-medium">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-bg py-20">
+        <div class="container mx-auto px-4 flex items-center">
+            <div class="w-full lg:w-1/2">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Get in Touch</h1>
+                <p class="text-lg text-gray-600 mb-4">We're here to help with all your tech needs. Reach out to our team for support, inquiries, or partnership opportunities.</p>
+                <p class="text-lg text-gray-600 mb-6">እንኳን ደህና መጡ። ለማንኛውም የቴክኖሎጂ ፍላጎትዎ እርዳታ ለማግኘት ሊያገኙን ይችላሉ።</p>
+                <div class="flex space-x-4">
+                    <a href="#contact-form" class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-blue-700 transition whitespace-nowrap">Send Message</a>
+                    <a href="tel:+251112345678" class="bg-white text-primary border border-primary px-6 py-3 !rounded-button font-medium hover:bg-gray-50 transition whitespace-nowrap">Call Us</a>
+                </div>
+            </div>
+            <div class="hidden lg:block lg:w-1/2">
+                <img src="27.7.jpg" alt="Customer Support" class="object-cover rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Office Location Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Ethiopia Office</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Visit our tech hub in Addis Ababa, where innovation meets local expertise. We're proud to serve the Ethiopian tech community.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="w-full lg:w-1/2">
+                    <div class="bg-gray-100 rounded-lg overflow-hidden h-96 map-container"></div>
+                </div>
+                
+                <div class="w-full lg:w-1/2 bg-white rounded-lg shadow-sm p-8 border border-gray-100">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Addis Ababa Tech Hub</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 flex items-center justify-center bg-blue-50 rounded-full text-primary">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Address</h4>
+                                <p class="text-gray-600 mt-1">Akaki Kality Sub-City, Near Kality Industrial Zone</p>
+                                <p class="text-gray-600">Addis Ababa, Ethiopia</p>
+                                <p class="text-gray-600">Postal Code: 1000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 flex items-center justify-center bg-blue-50 rounded-full text-primary">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Phone</h4>
+                                <p class="text-gray-600 mt-1">+251 11 234 5678</p>
+                                <p class="text-gray-600">+251 91 234 5678 (Mobile)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 flex items-center justify-center bg-blue-50 rounded-full text-primary">
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Business Hours</h4>
+                                <p class="text-gray-600 mt-1">Monday - Friday: 8:30 AM - 5:30 PM (EAT)</p>
+                                <p class="text-gray-600">Saturday: 9:00 AM - 1:00 PM</p>
+                                <p class="text-gray-600">Sunday: Closed</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 flex items-center justify-center bg-blue-50 rounded-full text-primary">
+                                <i class="ri-direction-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Directions</h4>
+                                <p class="text-gray-600 mt-1">Located 500m east of Kality Industrial Zone main gate, blue glass building with "Tech Innovations" sign.</p>
+                                <p class="text-gray-600 mt-1">ከካሊቲ ኢንዱስትሪ ዞን ዋና በር 500 ሜትር ወደ ምሥራቅ፣ ሰማያዊ የመስታወት ሕንፃ ላይ "KAMASS ETHIOPIA" ምልክት ያለው።</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="w-full md:w-2/5 bg-primary p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 flex items-center justify-center">
+                                    <i class="ri-mail-line"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Email</h4>
+                                    <a href="mailto:info@techinnovations.com" class="text-blue-100 hover:text-white">info@KAMASSETHIOPIA.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 flex items-center justify-center">
+                                    <i class="ri-whatsapp-line"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">WhatsApp</h4>
+                                    <a href="https://wa.me/251912345678" class="text-blue-100 hover:text-white">+251 91 234 5678</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-8 h-8 flex items-center justify-center">
+                                    <i class="ri-customer-service-2-line"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Support</h4>
+                                    <p class="text-blue-100">Available 24/7 for urgent issues</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-12">
+                            <h4 class="font-medium mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition">
+                                    <i class="ri-facebook-fill text-white"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition">
+                                    <i class="ri-twitter-x-fill text-white"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition">
+                                    <i class="ri-linkedin-fill text-white"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition">
+                                    <i class="ri-instagram-line text-white"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full md:w-3/5 p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
+                        
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="firstName" class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                                    <input type="text" id="firstName" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary text-gray-800 text-sm" placeholder="Your first name">
+                                </div>
+                                
+                                <div>
+                                    <label for="lastName" class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                                    <input type="text" id="lastName" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary text-gray-800 text-sm" placeholder="Your last name">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary text-gray-800 text-sm" placeholder="your.email@example.com">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                                <div class="relative">
+                                    <select id="subject" class="appearance-none w-full px-4 py-2 border border-gray-300 rounded focus:border-primary text-gray-800 text-sm pr-8">
+                                        <option value="">Select a subject</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="support">Technical Support</option>
+                                        <option value="sales">Sales</option>
+                                        <option value="partnership">Partnership</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                                        <i class="ri-arrow-down-s-line text-gray-400"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary text-gray-800 text-sm" placeholder="How can we help you?"></textarea>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="attachment" class="block text-sm font-medium text-gray-700 mb-1">Attachment (optional)</label>
+                                <div class="relative border border-gray-300 rounded px-4 py-2">
+                                    <input type="file" id="attachment" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+                                    <div class="flex items-center text-gray-500 text-sm">
+                                        <i class="ri-attachment-2 mr-2"></i>
+                                        <span>Choose a file</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center mb-6">
+                                <input type="checkbox" id="consent" class="hidden">
+                                <label for="consent" class="flex items-center cursor-pointer">
+                                    <div class="w-5 h-5 border border-gray-300 rounded mr-2 flex items-center justify-center bg-white">
+                                        <div class="consent-check hidden w-3 h-3 bg-primary rounded"></div>
+                                    </div>
+                                    <span class="text-sm text-gray-600">I agree to the processing of my personal data</span>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-blue-700 transition whitespace-nowrap">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Find quick answers to common questions about our products, services, and support options.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-4">
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-4 text-left bg-white hover:bg-gray-50 transition">
+                            <span class="font-medium text-gray-800">What are your delivery options in Addis Ababa?</span>
+                            <i class="ri-arrow-down-s-line text-gray-500 faq-icon"></i>
+                        </button>
+                        <div class="faq-content hidden px-4 pb-4 text-gray-600">
+                            <p>We offer same-day delivery within Addis Ababa city center and next-day delivery to surrounding areas including Akaki Kality. For remote areas, delivery may take 2-3 business days. All orders over 5,000 ETB qualify for free shipping.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-4 text-left bg-white hover:bg-gray-50 transition">
+                            <span class="font-medium text-gray-800">Do you offer technical support in Amharic?</span>
+                            <i class="ri-arrow-down-s-line text-gray-500 faq-icon"></i>
+                        </button>
+                        <div class="faq-content hidden px-4 pb-4 text-gray-600">
+                            <p>Yes, our technical support team in Addis Ababa is fluent in both English and Amharic. You can request support in your preferred language when contacting our team via phone, email, or in-person at our Akaki Kality office.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-4 text-left bg-white hover:bg-gray-50 transition">
+                            <span class="font-medium text-gray-800">What payment methods do you accept?</span>
+                            <i class="ri-arrow-down-s-line text-gray-500 faq-icon"></i>
+                        </button>
+                        <div class="faq-content hidden px-4 pb-4 text-gray-600">
+                            <p>We accept multiple payment methods including Telebirr, CBE Birr, Amole, credit/debit cards, bank transfers, and cash on delivery. For business purchases, we also offer invoice payment terms with proper documentation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-4 text-left bg-white hover:bg-gray-50 transition">
+                            <span class="font-medium text-gray-800">What is your warranty policy?</span>
+                            <i class="ri-arrow-down-s-line text-gray-500 faq-icon"></i>
+                        </button>
+                        <div class="faq-content hidden px-4 pb-4 text-gray-600">
+                            <p>All products come with a standard manufacturer warranty. Most electronics have a 1-year warranty, while premium products may have extended coverage. Warranty service is provided at our Addis Ababa service center with proof of purchase.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-4 text-left bg-white hover:bg-gray-50 transition">
+                            <span class="font-medium text-gray-800">Do you offer business or educational discounts?</span>
+                            <i class="ri-arrow-down-s-line text-gray-500 faq-icon"></i>
+                        </button>
+                        <div class="faq-content hidden px-4 pb-4 text-gray-600">
+                            <p>Yes, we offer special pricing for educational institutions, government agencies, and businesses in Ethiopia. Please contact our sales team at the Akaki Kality office with your official documentation to discuss bulk purchase options and special pricing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="#" class="text-2xl font-['Pacifico'] text-white mb-4 inline-block"><img src="KE logo.png" width="50%"></a>
+                    <p class="text-gray-400 mb-4">Your trusted tech partner in Ethiopia. Bringing the latest innovations with local support and expertise.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="ri-twitter-x-fill"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="Home.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="Products.html" class="text-gray-400 hover:text-white transition">Products</a></li>
+                        <li><a href="Deals.html" class="text-gray-400 hover:text-white transition">Deals</a></li>
+                        <li><a href="About Us.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="Contact-Us.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                            <i class="ri-map-pin-line text-primary"></i>
+                        </div>
+                        <span class="text-gray-400">Akaki Kality Sub-City, Near Kality Industrial Zone
+
+                            Addis Ababa, Ethiopia
+                            
+                            Postal Code: 1000</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-5 h-5 flex items-center justify-center mr-3">
+                            <i class="ri-phone-line text-primary"></i>
+                        </div>
+                        <span class="text-gray-400">+251 11 234 5678</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-5 h-5 flex items-center justify-center mr-3">
+                            <i class="ri-mail-line text-primary"></i>
+                        </div>
+                        <span class="text-gray-400">support@KAMASSETHIOPIA.com</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-5 h-5 flex items-center justify-center mr-3">
+                            <i class="ri-time-line text-primary"></i>
+                        </div>
+                        <span class="text-gray-400">Monday - Friday: 8:30 AM - 5:30 PM (EAT)</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
+                <p align="left">&copy; 2025 KAMASS ETHIOPIA. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

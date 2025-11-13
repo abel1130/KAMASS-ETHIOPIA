@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!-- Specifies the character encoding for the webpage. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--ensures the page width matches the device's screen width and  sets the default zoom level to 100%-->
+    <title>KAMASS ETHIOPIA - Home</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script><!--Loads Tailwind CSS-->
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#0066CC',secondary:'#E6F3FF'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"><!-- Loads custom fonts from Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="icon" type="image/x-icon" href="KE logo.png">
+<style>
+body {
+font-family: 'Inter', sans-serif;
+}
+.search-input:focus {
+outline: none;
+}
+.timeline-item:not(:last-child)::after {
+content: '';
+position: absolute;
+left: 17px;
+top: 30px;
+bottom: -30px;
+width: 2px;
+background-color: #e5e7eb;
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header -->
+<header class="bg-primary text-white shadow-md">
+<div class="container mx-auto px-4 py-3 flex items-center justify-between">
+<div class="flex items-center">
+<a href="#" class="text-2xl font-['Pacifico'] text-white"><img src="KE logo.png" width="20%"></a>
+</div>
+<div class="relative w-full max-w-xl mx-4">
+<input type="text" placeholder="Search for products..." class="search-input w-full py-2 px-4 pr-10 rounded-button text-gray-800 border-none">
+<div class="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center">
+<i class="ri-search-line text-gray-500"></i>
+</div>
+</div>
+<div class="flex items-center space-x-6">
+<div class="relative group">
+<div class="w-10 h-10 flex items-center justify-center cursor-pointer">
+<i class="ri-heart-line text-white ri-lg"></i>
+</div>
+<span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+</div>
+<div class="relative group">
+<div class="w-10 h-10 flex items-center justify-center cursor-pointer">
+<i class="ri-shopping-cart-line text-white ri-lg"></i>
+</div>
+<span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">2</span>
+</div>
+<div class="w-10 h-10 flex items-center justify-center cursor-pointer">
+<i class="ri-user-line text-white ri-lg"></i>
+</div>
+</div>
+</div>
+<!-- Navigation Menu -->
+<nav class="bg-white text-gray-800 shadow-sm">
+<div class="container mx-auto px-4">
+<ul class="flex items-center justify-center space-x-8">
+<li class="py-4">
+<a href="Home.html" class="font-medium text-gray-700 hover:text-primary transition">Home</a>
+</li>
+<li class="py-4">
+<a href="Products.html" class="font-medium text-gray-700 hover:text-primary transition">Products</a>
+</li>
+<li class="py-4">
+<a href="Deals.html" class="font-medium text-gray-700 hover:text-primary transition">Deals</a>
+</li>
+<li class="py-4">
+<a href="About Us.html" class="font-medium text-primary hover:text-primary/80 transition">About Us</a>
+</li>
+<li class="py-4">
+<a href="Contact-Us.html" class="font-medium text-gray-700 hover:text-primary transition">Contact</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<!-- Breadcrumb -->
+<div class="bg-gray-50 py-3">
+<div class="container mx-auto px-4">
+<div class="flex items-center text-sm">
+<a href="#" class="text-gray-600 hover:text-primary">Home</a>
+<span class="mx-2 text-gray-400">/</span>
+<span class="text-primary font-medium">About Us</span>
+</div>
+</div>
+</div>
+
+<!-- Hero Section -->
+<section class="py-16 bg-gradient-to-r from-primary/10 to-primary/5">
+<div class="container mx-auto px-4">
+<div class="flex flex-col lg:flex-row items-center">
+<div class="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0">
+<h1 class="text-4xl font-bold mb-6">KAMASS ETHIOPIA</h1>
+<p class="text-lg text-gray-600 mb-8">At KAMASS ETHIOPIA, we're passionate about technology and committed to providing our customers with the best products, services, and experiences in the industry.</p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+<i class="ri-customer-service-2-line text-primary ri-lg"></i>
+</div>
+<div>
+<div class="font-bold text-xl">24/7</div>
+<div class="text-gray-600">Customer Support</div>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+<i class="ri-truck-line text-primary ri-lg"></i>
+</div>
+<div>
+<div class="font-bold text-xl">Fast</div>
+<div class="text-gray-600">Worldwide Shipping</div>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+<i class="ri-shield-check-line text-primary ri-lg"></i>
+</div>
+<div>
+<div class="font-bold text-xl">100%</div>
+<div class="text-gray-600">Secure Payments</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2">
+<img src="KE.jpg" alt="KAMASS ETHIOPIA Store" class="rounded-lg shadow-xl w-full">
+</div>
+</div>
+</div>
+</section>
+
+<!-- Our Story Section -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="max-w-3xl mx-auto text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">Our Story</h2>
+</div>
+<div class="relative">
+<div class="absolute left-6 top-0 bottom-0 w-1 bg-gray-200 hidden md:block"></div>
+<div class="space-y-12">
+<p>This online shopping website project aims to provide a simple, efficient, and user-friendly platform for buying products online. Through teamwork and the use of web technologies like HTML, CSS, and JavaScript, our group will build a fully functional five-page website. This project not only helps us apply what we’ve learned in class but also prepares us for real-world web development. We are confident that the final result will reflect our dedication, creativity, and collaboration.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Our Mission & Values -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="max-w-3xl mx-auto text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">Our Mission & Values</h2>
+<p class="text-gray-600">Guided by strong principles, we strive to make technology accessible and beneficial for everyone.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Value 1 -->
+<div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<i class="ri-customer-service-fill text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Customer First</h3>
+<p class="text-gray-600">We believe in putting our customers at the center of everything we do. Their satisfaction is our top priority, and we continuously strive to exceed their expectations.</p>
+</div>
+<!-- Value 2 -->
+<div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<i class="ri-award-fill text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Quality & Excellence</h3>
+<p class="text-gray-600">We are committed to offering only the highest quality products and services. We rigorously test and curate our selection to ensure everything meets our standards of excellence.</p>
+</div>
+<!-- Value 3 -->
+<div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<i class="ri-lightbulb-fill text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Innovation</h3>
+<p class="text-gray-600">We embrace change and continuously seek innovative solutions. By staying at the forefront of technology, we help our customers access the latest and greatest products.</p>
+</div>
+<!-- Value 4 -->
+<div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<i class="ri-earth-fill text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Sustainability</h3>
+<p class="text-gray-600">We are committed to reducing our environmental impact through responsible sourcing, eco-friendly packaging, and our electronics recycling program.</p>
+</div>
+<!-- Value 5 -->
+<div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<i class="ri-team-fill text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Diversity & Inclusion</h3>
+<p class="text-gray-600">We celebrate diversity in our workforce and strive to create an inclusive environment where everyone feels valued and respected.</p>
+</div>
+<!-- Value 6 -->
+<div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<i class="ri-community-fill text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Community Engagement</h3>
+<p class="text-gray-600">We actively participate in and contribute to the communities we serve through educational initiatives, volunteer work, and charitable donations.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Stats Section -->
+<section class="py-16 bg-primary text-white">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+<div>
+<div class="text-4xl font-bold mb-2">50+</div>
+<div class="text-xl">Retail Stores</div>
+</div>
+<div>
+<div class="text-4xl font-bold mb-2">6</div>
+<div class="text-xl">Happy Customers</div>
+</div>
+<div>
+<div class="text-4xl font-bold mb-2">1</div>
+<div class="text-xl">Countries Served</div>
+</div>
+<div>
+<div class="text-4xl font-bold mb-2">5</div>
+<div class="text-xl">Team Members</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Locations Map -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="max-w-3xl mx-auto text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">Our Global Presence</h2>
+<p class="text-gray-600">Find KAMASS ETHIOPIA stores in major cities around the world.</p>
+</div>
+<div class="relative h-[500px] rounded-lg overflow-hidden shadow-lg">
+<div class="absolute inset-0 bg-center bg-cover" style="background-image: url('MAP.png')"></div>
+<div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+<div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
+<h3 class="text-xl font-bold mb-4">Find a Store Near You</h3>
+<div class="mb-4">
+<label class="block text-gray-700 text-sm font-medium mb-2">Select Region</label>
+<div class="relative">
+<select class="block w-full bg-white border border-gray-300 rounded-button px-4 py-2 pr-8 appearance-none focus:outline-none focus:ring-2 focus:ring-primary">
+<option>Addis Abeba</option>
+<option>Hawasa</option>
+<option>Bahr Dar</option>
+<option>Dra Dewa</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</div>
+</div>
+<button class="w-full bg-primary text-white py-2 rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap cursor-pointer">Find Stores</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Careers Section -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="flex flex-col lg:flex-row items-center">
+<div class="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0">
+<h2 class="text-3xl font-bold mb-4">Join Our Team</h2>
+<p class="text-gray-600 mb-6">At KAMASS ETHIOPIA, we're always looking for passionate, talented individuals to join our growing team. We offer competitive benefits, opportunities for growth, and a dynamic work environment.</p>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start">
+<div class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5 mr-3">
+<i class="ri-check-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium">Competitive Compensation</h4>
+<p class="text-gray-600 text-sm">Salary packages that recognize your skills and experience</p>
+</div>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5 mr-3">
+<i class="ri-check-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium">Health & Wellness</h4>
+<p class="text-gray-600 text-sm">Comprehensive health insurance and wellness programs</p>
+</div>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5 mr-3">
+<i class="ri-check-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium">Professional Development</h4>
+<p class="text-gray-600 text-sm">Ongoing training and education opportunities</p>
+</div>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5 mr-3">
+<i class="ri-check-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium">Work-Life Balance</h4>
+<p class="text-gray-600 text-sm">Flexible scheduling and generous paid time off</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="lg:w-1/2">
+<img src="CS.jpg" alt="KAMASS ETHIOPIA Office" class="rounded-lg shadow-xl w-full">
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-16 bg-primary">
+<div class="container mx-auto px-4">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-white mb-4">Ready to Experience KAMASS ETHIOPIA?</h2>
+<p class="text-white/80 mb-8">Visit one of our stores or shop online today to discover the latest in technology.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a href="Products.html" class="bg-white text-primary px-6 py-3 rounded-button font-medium hover:bg-gray-100 transition whitespace-nowrap cursor-pointer">Find a Store</a>
+<a href="Deals.html" class="bg-transparent text-white border border-white px-6 py-3 rounded-button font-medium hover:bg-white/10 transition whitespace-nowrap cursor-pointer">Shop Online</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="py-12 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+<p class="text-gray-600 mb-8">Stay updated with our latest products, exclusive deals, and tech news</p>
+<div class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+<input type="email" placeholder="Your email address" class="flex-grow py-3 px-4 rounded-button border-none text-gray-800">
+<button class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap cursor-pointer">Subscribe</button>
+</div>
+<div class="mt-4 text-gray-500 text-sm">
+We respect your privacy. Unsubscribe at any time.
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white pt-12 pb-6">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+<!-- Column 1 -->
+<div>
+<a href="#" class="text-2xl font-['Pacifico'] text-white mb-4 inline-block"><img src="KE logo.png" width="50%"></a>
+<p class="text-gray-400 mb-4">Your one-stop destination for all your tech needs. We offer the latest gadgets and accessories at competitive prices.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition cursor-pointer">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition cursor-pointer">
+<i class="ri-twitter-x-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition cursor-pointer">
+<i class="ri-instagram-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition cursor-pointer">
+<i class="ri-youtube-fill"></i>
+</a>
+</div>
+</div>
+<!-- Column 2 -->
+<div>
+<h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition">Products</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition">Deals</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
+</ul>
+</div>
+<!-- Column 4 -->
+<div>
+<h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<span class="text-gray-400">Address
+    Akaki Kality Sub-City, Near Kality Industrial Zone
+    
+    Addis Ababa, Ethiopia
+    
+    Postal Code: 1000</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<span class="text-gray-400">+251 11 234 5678</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<span class="text-gray-400">support@KAMASSETHIOPIA.com</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-time-line text-primary"></i>
+</div>
+<span class="text-gray-400">Monday - Friday: 8:30 AM - 5:30 PM (EAT)</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-700 pt-6">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-4 md:mb-0">
+<p class="text-gray-400 text-sm">&copy; 2025 KAMASS ETHIOPIA. All rights reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
